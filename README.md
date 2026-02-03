@@ -1,19 +1,23 @@
 # C++ CLI Calculator
 
-A command-line calculator built in C++.
+A command-line calculator built in C++ that evaluates mathematical expressions directly from the terminal.
+
+This project focuses on clean logic, correct operator handling, and a simple user experience without external libraries.
 
 ## Features
-- Multiple operations in one expression
-- Operator precedence (*, / before +, -)
-- Brackets support
-- Continuous calculation
-- Error handling (invalid input, divide by zero)
+- Evaluate full expressions (example: `10 + 5 * 2`)
+- Operator precedence supported (`*` `/` before `+` `-`)
+- Brackets / parentheses support
+- Continuous calculation without restarting the program
+- Error handling for:
+  - Invalid input
+  - Division by zero
+  - Mismatched brackets
 
-## Planned (Level 3)
-- Scientific functions (sin, cos, log)
-- Variables & memory
-- History
-- Better CLI UX
+## How It Works
+- Uses stacks to process numbers and operators
+- Applies operators based on precedence rules
+- Evaluates expressions from left to right correctly
 
 ## Run
 ```bash
