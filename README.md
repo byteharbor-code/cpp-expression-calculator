@@ -1,25 +1,39 @@
-# C++ CLI Calculator
+# C++ CLI Scientific Calculator
 
-A command-line calculator built in C++ that evaluates mathematical expressions directly from the terminal.
+A command-line scientific calculator built in C++ that evaluates mathematical and scientific expressions directly from the terminal.
 
-This project focuses on clean logic, correct operator handling, and a simple user experience without external libraries.
+This project focuses on clean logic, correct operator handling, and implementing common scientific functions without using external libraries.
 
 ## Features
-- Evaluate full expressions (example: `10 + 5 * 2`)
+- Evaluate full mathematical expressions (example: `10 + 5 * 2`)
 - Operator precedence supported (`*` `/` before `+` `-`)
 - Brackets / parentheses support
+- Scientific functions support:
+  - `sin(x)`
+  - `cos(x)`
+  - `tan(x)`
+  - `log(x)`
+  - `sqrt(x)`
 - Continuous calculation without restarting the program
 - Error handling for:
   - Invalid input
   - Division by zero
+  - Invalid scientific operations
   - Mismatched brackets
 
 ## How It Works
-- Uses stacks to process numbers and operators
+- Uses stacks to process numbers, operators, and functions
 - Applies operators based on precedence rules
-- Evaluates expressions from left to right correctly
+- Evaluates expressions step-by-step
+- Uses C++ math functions internally for scientific calculations
 
 ## Run
 ```bash
 g++ calculator.cpp -o calculator
 ./calculator
+
+Input:  sqrt(25) + log(100)
+Output: 7 
+
+Input:  sin(30) + cos(60)
+Output: 1
